@@ -1,5 +1,8 @@
 package org.sample;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SampleCode {
 
 	public static void main(String[] args) {
@@ -12,5 +15,23 @@ public class SampleCode {
 		// To get the length of the given String
 		int length = str.length();
 		System.out.println(length);
+
+		// create Object for List
+		List<String> li = new ArrayList<String>();
+		li.add("A");
+		li.add("B");
+		li.add("C");
+		li.add("D");
+		li.add("E");
+		li.add("F");
+		// Iterating list
+		for (String string : li) {
+			System.out.println(string);
+		}
+
+		for (int i = 0; i < li.size(); i++) {
+			System.out.println(li.get(i));
+		}
+
 	}
 }
